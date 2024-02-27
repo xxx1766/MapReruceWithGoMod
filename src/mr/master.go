@@ -206,7 +206,8 @@ func checkAllReduceTask(m *Master) bool {
 // main/mrmaster.go calls Done() periodically to find out
 // if the entire job has finished.
 func (m *Master) Done() bool {
-	ret := false
+	// ret := false
+	ret := true
 	// Your code here.
 	ret = m.ReduceFinished
 
